@@ -28,7 +28,7 @@ func program() {
 		} else if pilihan_input == 4 {
 			temperature.Reamur()
 		} else {
-
+			
 		}
 
 		fmt.Println("Apakah anda ingin menginput lagi ?")
