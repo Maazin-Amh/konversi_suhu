@@ -1,0 +1,5 @@
+package temperature
+
+func Reamur() {
+
+}
