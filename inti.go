@@ -12,7 +12,7 @@ func program() {
 
 	for status_check {
 
-		fmt.Println("Masukan jenis yang ingin anda ubah skala pengukuran")
+		fmt.Println("Masukan jenis yang ingin anda ubah skala pengukuran :")
 		fmt.Println("1. Celcius")
 		fmt.Println("2. Fahrenheit")
 		fmt.Println("3. Kelvin")
@@ -27,8 +27,6 @@ func program() {
 			temperature.Kelvin()
 		} else if pilihan_input == 4 {
 			temperature.Reamur()
-		} else {
-			
 		}
 
 		fmt.Println("Apakah anda ingin menginput lagi ?")
