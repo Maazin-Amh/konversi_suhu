@@ -1,7 +1,6 @@
 package temperature
 
 import "fmt"
-
 func Celcius() {
 	var pilihan_konversi int
 	var angka_c, hasil float64
@@ -27,3 +26,4 @@ func Celcius() {
 		fmt.Println("R = ", hasil)
 	}
 }
+
