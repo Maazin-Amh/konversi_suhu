@@ -18,10 +18,7 @@ func Reamur() {
 	if pilihan_konversi < 1 || pilihan_konversi > 3{
 		fmt.Println("input yang anda masukan tidak ada di pilihan")
 		return
-	} 
-
-
-	fmt.Scan(&pilihan_konversi)
+	}
 
 	fmt.Println("Masukan angka Reamur")
 	fmt.Scan(&angka_r)
