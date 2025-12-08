@@ -20,7 +20,7 @@ func Fahrenheit() {
 		hasil = 5.0 / 9.0 * (angka_f - 32.0)
 		fmt.Println("C = ", hasil)
 	} else if pilihan_konversi == 2 {
-		hasil = (angka_f - 32.0) * 5.0 / 9.0 + 273.15
+		hasil = (angka_f-32.0)*5.0/9.0 + 273.15
 		fmt.Println("K = ", hasil)
 	} else if pilihan_konversi == 3 {
 		hasil = 4.0 / 5.0 * (angka_f - 32.0)

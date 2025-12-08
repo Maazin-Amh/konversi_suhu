@@ -1,6 +1,7 @@
 package temperature
 
 import "fmt"
+
 func Celcius() {
 	var pilihan_konversi int
 	var angka_c, hasil float64
@@ -9,8 +10,12 @@ func Celcius() {
 	fmt.Println("1. Celcius ke Fahrenheit")
 	fmt.Println("2. Celcius ke Kelvin")
 	fmt.Println("3. Celcius ke Reamur")
-
 	fmt.Scan(&pilihan_konversi)
+
+	if pilihan_konversi < 1 || pilihan_konversi > 3 {
+		fmt.Println("input yang anda masukan tidak ada di pilihan")
+		return
+	}
 
 	fmt.Println("Masukan angka celciusnya!")
 	fmt.Scan(&angka_c)
@@ -26,4 +31,3 @@ func Celcius() {
 		fmt.Println("R = ", hasil)
 	}
 }
-
