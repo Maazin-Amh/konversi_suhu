@@ -15,9 +15,13 @@ func Fahrenheit() {
 		fmt.Println("input yang anda masukan tidak ada di pilihan")
 		return
 	}
+<<<<<<< HEAD
 
 	fmt.Scan(&pilihan_konversi)
 
+=======
+	
+>>>>>>> 98c871f805129bd8ad71e23eb5856b72fffa7a9c
 	fmt.Println("Masukan angka Fahrenheit!")
 	fmt.Scan(&angka_f)
 

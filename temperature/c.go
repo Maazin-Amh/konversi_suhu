@@ -16,6 +16,7 @@ func Celcius() {
 		fmt.Println("input yang anda masukan tidak ada di pilihan")
 		return
 	}
+	fmt.Scan(pilihan_konversi)
 
 	fmt.Println("Masukan angka celciusnya!")
 	fmt.Scan(&angka_c)
