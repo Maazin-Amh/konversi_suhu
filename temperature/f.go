@@ -11,6 +11,11 @@ func Fahrenheit() {
 	fmt.Println("2. Fahrenheit ke Kelvin")
 	fmt.Println("3. Fahrenheit ke Reamur")
 
+	if pilihan_konversi < 1 || pilihan_konversi > 3 {
+		fmt.Println("input yang anda masukan tidak ada di pilihan")
+		return
+	}
+
 	fmt.Scan(&pilihan_konversi)
 
 	fmt.Println("Masukan angka Fahrenheit!")
