@@ -3,7 +3,6 @@ package temperature
 import (
 	"fmt"
 
-	"golang.org/x/text/encoding/korean"
 )
 
 func Reamur() {
@@ -19,6 +18,7 @@ func Reamur() {
 		fmt.Println("input yang anda masukan tidak ada di pilihan")
 		return
 	}
+	
 
 	fmt.Println("Masukan angka Reamur")
 	fmt.Scan(&angka_r)
