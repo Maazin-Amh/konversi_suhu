@@ -18,6 +18,7 @@ func Reamur() {
 		fmt.Println("input yang anda masukan tidak ada di pilihan")
 		return
 	}
+	fmt.Println("pilihan_konversi")
 	
 
 	fmt.Println("Masukan angka Reamur")
