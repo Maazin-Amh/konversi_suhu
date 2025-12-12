@@ -26,24 +26,23 @@ func program() {
 			fmt.Println("3. Celcius ke Reamur")
 			fmt.Scan(&pilihan_konversi)
 
-			if pilihan_konversi < 1 || pilihan_konversi > 3 {
-				fmt.Println("input yang anda masukan tidak ada di pilihan")
-				return
-			}
-			fmt.Scan(pilihan_konversi)
-
-			fmt.Println("Masukan angka celciusnya!")
-			fmt.Scan(&angka_c)
-
 			if pilihan_konversi == 1 {
+				fmt.Println("Masukan angka celciusnya!")
+				fmt.Scan(&angka_c)
 				hasil = (9.0 / 5.0 * angka_c) + 32.0
 				fmt.Println("F = ", hasil)
 			} else if pilihan_konversi == 2 {
+				fmt.Println("Masukan angka celciusnya!")
+				fmt.Scan(&angka_c)
 				hasil = angka_c + 273.15
 				fmt.Println("K = ", hasil)
 			} else if pilihan_konversi == 3 {
+				fmt.Println("Masukan angka celciusnya!")
+				fmt.Scan(&angka_c)
 				hasil = 4.0 / 5.0 * angka_c
 				fmt.Println("R = ", hasil)
+			} else {
+				fmt.Println("input yang anda masukan tidak ada di pilihan")
 			}
 
 		} else if pilihan_input == 2 {
@@ -53,24 +52,25 @@ func program() {
 			fmt.Println("3. Fahrenheit ke Reamur")
 			fmt.Scan(&pilihan_konversi)
 
-			if pilihan_konversi < 1 || pilihan_konversi > 3 {
-				fmt.Println("input yang anda masukan tidak ada di pilihan")
-				return
-			}
-
-			fmt.Println("Masukan angka Fahrenheit!")
-			fmt.Scan(&angka_f)
-
 			if pilihan_konversi == 1 {
+				fmt.Println("Masukan angka Fahrenheit!")
+				fmt.Scan(&angka_f)
 				hasil = 5.0 / 9.0 * (angka_f - 32.0)
 				fmt.Println("C = ", hasil)
 			} else if pilihan_konversi == 2 {
+				fmt.Println("Masukan angka Fahrenheit!")
+				fmt.Scan(&angka_f)
 				hasil = (angka_f-32.0)*5.0/9.0 + 273.15
 				fmt.Println("K = ", hasil)
 			} else if pilihan_konversi == 3 {
+				fmt.Println("Masukan angka Fahrenheit!")
+				fmt.Scan(&angka_f)
 				hasil = 4.0 / 5.0 * (angka_f - 32.0)
 				fmt.Println("R = ", hasil)
+			} else {
+				fmt.Println("input yang anda masukan tidak ada di pilihan")
 			}
+
 		} else if pilihan_input == 3 {
 			fmt.Println("Anda memilih Kelvin, anda ingin mengubah kelvin ke")
 			fmt.Println("1. Kelvin ke Celcius")
@@ -78,24 +78,25 @@ func program() {
 			fmt.Println("3. Kelvin ke Reamur")
 			fmt.Scan(&pilihan_konversi)
 
-			if pilihan_konversi < 1 || pilihan_konversi > 3 {
-				fmt.Println("input yang anda masukan tidak ada di pilihan")
-				return
-			}
-
-			fmt.Println("Masukan angka Kelvin")
-			fmt.Scan(&angka_k)
-
 			if pilihan_konversi == 1 {
+				fmt.Println("Masukan angka Kelvin")
+				fmt.Scan(&angka_k)
 				hasil = angka_k - 273.15
 				fmt.Println("C = ", hasil)
 			} else if pilihan_konversi == 2 {
+				fmt.Println("Masukan angka Kelvin")
+				fmt.Scan(&angka_k)
 				hasil = 5.0/9.0*(angka_k-273.15) + 32.0
 				fmt.Println("F = ", hasil)
 			} else if pilihan_konversi == 3 {
+				fmt.Println("Masukan angka Kelvin")
+				fmt.Scan(&angka_k)
 				hasil = 4.0 / 5.0 * (angka_k - 273.15)
 				fmt.Println("R = ", hasil)
+			} else {
+				fmt.Println("input yang anda masukan tidak ada di pilihan")
 			}
+
 		} else if pilihan_input == 4 {
 			fmt.Println("Anda memilih Reamur, anda ingin mengubah reamur ke")
 			fmt.Println("1. Reamur ke Celcius")
@@ -103,24 +104,26 @@ func program() {
 			fmt.Println("3. Reamur ke Kelvin")
 			fmt.Scan(&pilihan_konversi)
 
-			if pilihan_konversi < 1 || pilihan_konversi > 3 {
-				fmt.Println("input yang anda masukan tidak ada di pilihan")
-				return
-			}
-
-			fmt.Println("Masukan angka Reamur")
-			fmt.Scan(&angka_r)
-
 			if pilihan_konversi == 1 {
+				fmt.Println("Masukan angka Reamur")
+				fmt.Scan(&angka_r)
 				hasil = 5.0 / 4.0 * angka_r
 				fmt.Println("C = ", hasil)
 			} else if pilihan_konversi == 2 {
+				fmt.Println("Masukan angka Reamur")
+				fmt.Scan(&angka_r)
 				hasil = 9.0/4.0*angka_r + 32.0
 				fmt.Println("F = ", hasil)
 			} else if pilihan_konversi == 3 {
+				fmt.Println("Masukan angka Reamur")
+				fmt.Scan(&angka_r)
 				hasil = 5.0/4.0*angka_r + 273.15
 				fmt.Println("K = ", hasil)
+			} else {
+				fmt.Println("input yang anda masukan tidak ada di pilihan")
 			}
+		} else {
+			fmt.Println("Anda memasukan angka yang tidak ada di atas")
 		}
 
 		fmt.Println("Apakah anda ingin menginput lagi ?")
@@ -137,8 +140,6 @@ func program() {
 
 }
 
-
 func main() {
 	program()
 }
-
