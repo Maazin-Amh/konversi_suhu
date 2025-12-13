@@ -12,7 +12,7 @@ func program() {
 
 	for status_check {
 
-		fmt.Println("Masukan point yang ingin anda ubah skala pengukuran (gunakan 1/2/3/4):")
+		fmt.Println("Masukan point yang ingin anda ubah skala pengukuran (gunakan 1/2/3/4) :")
 		fmt.Println("1. Celcius")
 		fmt.Println("2. Fahrenheit")
 		fmt.Println("3. Kelvin")
@@ -126,7 +126,7 @@ func program() {
 			fmt.Println("Anda memasukan angka yang tidak ada di atas")
 		}
 
-		fmt.Println("Apakah anda ingin menginput lagi ?")
+		fmt.Println("Apakah anda ingin menginput ulang ?")
 		fmt.Println("iya | tidak")
 		fmt.Scan(&status_ulang)
 
